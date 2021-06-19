@@ -19,10 +19,7 @@ namespace LinkedList
     /// </summary>
     class LinkedListStack
     {
-        //intializing top node.
-        StNode top;
-        //Stack operations - push(), pop(), peek(), isEmpty(), isFull();
-
+        
         internal void push(int data)
         {
             StNode stnode = new StNode();

@@ -7,10 +7,9 @@ namespace LinkedList
     class LinkedLi
     {
         Node head;
-        /// <summary>
-        /// indert data at the end
-        /// </summary>
-        /// <param name="data"></param>
+   
+        // insert data at the end
+       
         public void Insert(int data)
         {
             Node node = new Node();
@@ -30,10 +29,9 @@ namespace LinkedList
                 n.next = node;
             }
         }
-        /// <summary>
-        /// Insert node at start.
-        /// </summary>
-        /// <param name="data"></param>
+ 
+        // Insert node at start.
+       
         public void InsertAtStart(int data)
         {
             Node node = new Node();
@@ -82,28 +80,6 @@ namespace LinkedList
         {
             head = head.next;
         }
-        /// <summary>
-        /// delete function at particular index
-        /// </summary>
-        /// <param name="index">memory location at which data has to be deleted</param>
-        public void DeleteAt(int index)
-        {
-            if (index == 0)
-            {
-                head = head.next;
-            }
-            else
-            {
-                Node n = head;
-                // Node n1 = null;
-                for (int i = 0; i < index - 1; i++)
-                {
-                    n = n.next;
-                }
-                // n1 = n.next;
-                //n.next = n1.next;
-                n.next = n.next.next;
-            }
-        }
+        
     }
 }
