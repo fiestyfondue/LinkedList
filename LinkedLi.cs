@@ -7,9 +7,9 @@ namespace LinkedList
     class LinkedLi
     {
         Node head;
-   
-        // insert data at the end
-       
+
+        /// indert data at the end
+
         public void Insert(int data)
         {
             Node node = new Node();
@@ -29,10 +29,10 @@ namespace LinkedList
                 n.next = node;
             }
         }
- 
-        // Insert node at start.
-       
-        public void InsertAtStart(int data)
+        
+    
+  
+        public void InsertAtStart(int data)        // Insert node at start.
         {
             Node node = new Node();
             node.data = data;
@@ -41,11 +41,9 @@ namespace LinkedList
             node.next = head;
             head = node;
         }
-        /// <summary>
-        /// Insert elements at particular index
-        /// </summary>
-        /// <param name="index">memory location at which data to be inserted</param>
-        /// <param name="data">actual data to be inserted</param>
+      
+       // Insert elements at particular index
+       
         public void InsertAt(int index, int data)
         {
             Node node = new Node();
@@ -60,9 +58,9 @@ namespace LinkedList
             node.next = n.next;
             n.next = node;
         }
-        /// <summary>
-        /// print the list of elements
-        /// </summary>
+      
+        // print the list of elements
+     
         public void Show()
         {
             Node node = head;
@@ -73,13 +71,34 @@ namespace LinkedList
             }
             Console.WriteLine(node.data);
         }
-        /// <summary>
+     
         /// delete the first element only
-        /// </summary>
+    
         public void DeleteFirst()
         {
             head = head.next;
         }
-        
+
+        /// delete function at particular index
+       
+        public void DeleteAt(int index)
+        {
+            if (index == 0)
+            {
+                head = head.next;
+            }
+            else
+            {
+                Node n = head;
+                // Node n1 = null;
+                for (int i = 0; i < index - 1; i++)
+                {
+                    n = n.next;
+                }
+                // n1 = n.next;
+                //n.next = n1.next;
+                n.next = n.next.next;
+            }
+        }
     }
 }

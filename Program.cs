@@ -13,8 +13,8 @@ namespace LinkedList
             list.InsertAt(1, 30);
             Console.WriteLine("List elements");
             list.Show();
-            list.DeleteFirst();
-            Console.WriteLine("List elements after pop()");
+            list.DeleteAt(0);
+            Console.WriteLine("List elements after popLast()");
             list.Show();
 
 
