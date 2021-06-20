@@ -14,9 +14,11 @@ namespace LinkedList
             Console.WriteLine("List elements");
             list.Insert(56);
             list.Insert(70);
+            list.Insert(30);
             list.Show();
-            Console.WriteLine("List elements after inserting 30 between 56 and 70");
-            list.InsertAt(1, 30);
+
+            Console.WriteLine("List elements after deleting last element");
+            list.PopLast();
             list.Show();
            
 
