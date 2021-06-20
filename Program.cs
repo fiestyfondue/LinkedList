@@ -17,9 +17,9 @@ namespace LinkedList
             list.Insert(30);
             list.Show();
 
-            Console.WriteLine("List elements after deleting last element");
-            list.PopLast();
-            list.Show();
+            Console.WriteLine("Element to be searched here is 30");
+            list.Search(30);
+            
            
 
 

@@ -120,5 +120,21 @@ namespace LinkedList
                 temp.next = null;
             }
         }
+        internal Node Search(int data)
+        {
+            Node temp = head;
+            while(temp!=null)   //Checking for middle elements in list
+            {
+                if(temp.data == data)
+                {
+                    Console.WriteLine($"{data} is present in the list");
+                    return temp;
+                }
+                temp = temp.next;
+
+            }
+            Console.WriteLine($"{data} is not present");
+            return null;
+        }
     }
 }
