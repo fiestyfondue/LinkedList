@@ -19,6 +19,9 @@ namespace LinkedList
 
             Console.WriteLine("Element to be searched here is 30");
             list.Search(30);
+            Console.WriteLine("Show Ordered List");
+            list.Show();
+
             
            
 
